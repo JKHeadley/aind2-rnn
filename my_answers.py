@@ -38,10 +38,10 @@ def build_part1_RNN(window_size):
 def cleaned_text(text):
     punctuation = ['!', ',', '.', ':', ';', '?']
     printable = "!,.:;?0123456789abcdefghijklmnopqrstuvwxyz"
-    printableSet = set(printable)
-    text = ' '.join(filter(lambda x: x in printableSet, text))
+    text = ''.join(i for i in text if i not in printable)
 
     return text
+
 
 ### TODO: fill out the function below that transforms the input text and window-size into a set of input/output pairs for use with our RNN model
 def window_transform_text(text, window_size, step_size):
