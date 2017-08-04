@@ -38,7 +38,7 @@ def build_part1_RNN(window_size):
 def cleaned_text(text):
     punctuation = ['!', ',', '.', ':', ';', '?']
     printable = "!,.:;?0123456789abcdefghijklmnopqrstuvwxyz"
-    text = ''.join(i for i in text if i not in printable)
+    text = ''.join(i for i in text if i in printable)
 
     return text
 
