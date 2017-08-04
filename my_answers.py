@@ -39,7 +39,7 @@ def cleaned_text(text):
     punctuation = ['!', ',', '.', ':', ';', '?']
     printable = "!,.:;?0123456789abcdefghijklmnopqrstuvwxyz"
     printableSet = set(printable)
-    ''.join(filter(lambda x: x in printableSet, text))
+    text = ''.join(filter(lambda x: x in printableSet, text))
 
     return text
 
