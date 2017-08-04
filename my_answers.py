@@ -36,7 +36,7 @@ def build_part1_RNN(window_size):
 
 ### TODO: return the text input with only ascii lowercase and the punctuation given below included.
 def cleaned_text(text):
-    
+
     printable = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n',
                  'o','p','q','r','s','t','u','v','w','x','y','z','!',',','.',':',';','?',' ']
     text = ''.join([i if i in printable else ' ' for i in text])
@@ -49,6 +49,12 @@ def window_transform_text(text, window_size, step_size):
     # containers for input/output pairs
     inputs = []
     outputs = []
+
+    for i in range(0, len(text) - window_size, step_size):
+        inputs.append(text[i:i + window_size])
+        outputs.append(text[i + window_size:i + window_size + step_size])
+
+        # outputs = text[window_size:]
 
     return inputs,outputs
 
