@@ -37,7 +37,7 @@ def build_part1_RNN(window_size):
 ### TODO: return the text input with only ascii lowercase and the punctuation given below included.
 def cleaned_text(text):
 
-    printable = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n',
+    printable = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n',
                  'o','p','q','r','s','t','u','v','w','x','y','z','!',',','.',':',';','?',' ']
     text = ''.join([i if i in printable else ' ' for i in text])
 
@@ -64,6 +64,6 @@ def build_part2_RNN(window_size, num_chars):
     model = Sequential()
     model.add(LSTM(200, input_shape=(window_size, num_chars)))
     model.add(Dense(num_chars))
-    model.add(Dense(num_chars, activation='softmax'))
+    model.add(Activation('softmax'))
 
     return model
