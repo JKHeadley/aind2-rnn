@@ -199,3 +199,6 @@ Free memory: 11.11GiB
 [I 22:17:44.226 NotebookApp] Saving file at /RNN_project.ipynb
 [I 22:19:45.087 NotebookApp] Saving file at /RNN_project.ipynb
 [I 22:21:43.073 NotebookApp] Saving file at /RNN_project.ipynb
+[C 22:24:56.786 NotebookApp] received signal 15, stopping
+[I 22:24:56.787 NotebookApp] Shutting down kernels
+[I 22:24:57.489 NotebookApp] Kernel shutdown: aab7d2b4-7a43-4fad-9b5a-2c901655e5ef
