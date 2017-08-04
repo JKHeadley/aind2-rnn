@@ -39,7 +39,7 @@ def cleaned_text(text):
     punctuation = ['!', ',', '.', ':', ';', '?']
     printable = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n',
                  'o','p','q','r','s','t','u','v','w','x','y','z','!', ',', '.', ':', ';', '?']
-    text = ''.join(i for i in text if i in printable)
+    text = ''.join([i for i in text if i in printable])
 
     return text
 
