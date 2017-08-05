@@ -202,3 +202,90 @@ Free memory: 11.11GiB
 [C 22:24:56.786 NotebookApp] received signal 15, stopping
 [I 22:24:56.787 NotebookApp] Shutting down kernels
 [I 22:24:57.489 NotebookApp] Kernel shutdown: aab7d2b4-7a43-4fad-9b5a-2c901655e5ef
+[I 22:40:38.671 NotebookApp] Serving notebooks from local directory: /home/aind2/aind2-rnn
+[I 22:40:38.671 NotebookApp] 0 active kernels 
+[I 22:40:38.671 NotebookApp] The Jupyter Notebook is running at: http://0.0.0.0:8888/?token=bd13a3dcdd075b59bd8e931bb3b7f37541a9726d2d3160bc
+[I 22:40:38.671 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 22:40:38.672 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://0.0.0.0:8888/?token=bd13a3dcdd075b59bd8e931bb3b7f37541a9726d2d3160bc
+[I 22:41:50.826 NotebookApp] 302 GET /?token=bd13a3dcdd075b59bd8e931bb3b7f37541a9726d2d3160bc:8888/?token=bd13a3dcdd075b59bd8e931bb3b7f37541a9726d2d3160bc (73.15.53.141) 0.66ms
+[I 22:42:02.691 NotebookApp] Kernel started: 1fbbaa49-48a8-4d23-8de1-dfbb82d8b5d0
+[I 22:42:02.724 NotebookApp] 302 GET /notebooks/images/text_windowing_training.gif (73.15.53.141) 0.87ms
+[I 22:42:02.725 NotebookApp] 302 GET /notebooks/images/timeseries_windowing_training.gif (73.15.53.141) 0.73ms
+[I 22:48:03.129 NotebookApp] Saving file at /RNN_project.ipynb
+2017-08-04 22:49:48.304646: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-04 22:49:48.304689: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-04 22:49:48.304696: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-04 22:49:48.304701: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-04 22:49:48.304706: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-08-04 22:49:51.242907: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-08-04 22:49:51.243386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:1e.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+2017-08-04 22:49:51.243405: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-08-04 22:49:51.243411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-08-04 22:49:51.243425: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-08-04 22:49:51.909866: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 6221 get requests, put_count=3433 evicted_count=1000 eviction_rate=0.29129 and unsatisfied allocation rate=0.62498
+2017-08-04 22:49:51.909915: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+2017-08-04 22:49:52.448073: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 2285 get requests, put_count=5297 evicted_count=3000 eviction_rate=0.566358 and unsatisfied allocation rate=0
+2017-08-04 22:49:53.064554: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 1976 get requests, put_count=3992 evicted_count=2000 eviction_rate=0.501002 and unsatisfied allocation rate=0
+2017-08-04 22:49:53.677276: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 980 get requests, put_count=2001 evicted_count=1000 eviction_rate=0.49975 and unsatisfied allocation rate=0
+2017-08-04 22:49:54.297321: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 7470 get requests, put_count=6889 evicted_count=3000 eviction_rate=0.435477 and unsatisfied allocation rate=0.482731
+2017-08-04 22:49:54.297369: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 281 to 309
+2017-08-04 22:49:54.794776: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 2361 get requests, put_count=5394 evicted_count=3000 eviction_rate=0.556174 and unsatisfied allocation rate=0
+2017-08-04 22:49:55.424844: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 1583 get requests, put_count=3627 evicted_count=2000 eviction_rate=0.55142 and unsatisfied allocation rate=0
+2017-08-04 22:49:56.067896: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 1515 get requests, put_count=3574 evicted_count=2000 eviction_rate=0.559597 and unsatisfied allocation rate=0
+2017-08-04 22:49:56.872368: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 8111 get requests, put_count=8174 evicted_count=3000 eviction_rate=0.367017 and unsatisfied allocation rate=0.371841
+2017-08-04 22:49:56.872419: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 871 to 958
+2017-08-04 22:49:57.555646: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 847 get requests, put_count=1962 evicted_count=1000 eviction_rate=0.509684 and unsatisfied allocation rate=0
+2017-08-04 22:49:58.474077: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 1240 get requests, put_count=3409 evicted_count=2000 eviction_rate=0.586682 and unsatisfied allocation rate=0
+2017-08-04 22:50:01.034033: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 32180 get requests, put_count=32204 evicted_count=1000 eviction_rate=0.031052 and unsatisfied allocation rate=0.0405531
+2017-08-04 22:50:01.034087: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 3625 to 3987
+[I 22:50:02.946 NotebookApp] Saving file at /RNN_project.ipynb
+[I 22:52:04.517 NotebookApp] Saving file at /RNN_project.ipynb
+[I 22:54:03.266 NotebookApp] Saving file at /RNN_project.ipynb
+[I 22:56:03.883 NotebookApp] Saving file at /RNN_project.ipynb
+[I 22:58:03.844 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:00:03.834 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:02:03.685 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:04:03.649 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:06:03.711 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:08:03.705 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:10:03.702 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:12:03.684 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:14:03.641 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:16:02.850 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:18:02.844 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:18:23.472 NotebookApp] Kernel interrupted: 1fbbaa49-48a8-4d23-8de1-dfbb82d8b5d0
+[I 23:20:03.592 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:22:03.672 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:24:03.686 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:26:03.708 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:28:04.087 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:30:03.665 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:32:03.693 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:34:03.561 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:36:03.683 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:38:03.602 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:40:03.662 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:42:03.701 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:44:03.564 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:46:03.581 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:48:03.667 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:50:05.794 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:52:04.158 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:54:03.668 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:56:03.646 NotebookApp] Saving file at /RNN_project.ipynb
+[I 23:58:03.719 NotebookApp] Saving file at /RNN_project.ipynb
+[I 00:00:04.121 NotebookApp] Saving file at /RNN_project.ipynb
+[I 00:02:04.314 NotebookApp] Saving file at /RNN_project.ipynb
+[I 00:04:06.424 NotebookApp] Saving file at /RNN_project.ipynb
+[C 00:08:26.182 NotebookApp] received signal 15, stopping
+[I 00:08:26.183 NotebookApp] Shutting down kernels
+[I 00:08:26.785 NotebookApp] Kernel shutdown: 1fbbaa49-48a8-4d23-8de1-dfbb82d8b5d0
